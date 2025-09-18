@@ -52,6 +52,9 @@ In the global frontier AI compute market (>100B params), we calculated a rolling
 - Triggers: 4Q >2,500 (audit); 2Q >3,000 (ban anti-benchmark in public contracts); any >4,000 (mandatory interoperability)
 - Uncertainty: ±60% scenarios; report min/median/max
 
+#### Governance Recommendations Roadmap
+The project includes a policy-technical roadmap aligned with the HHI triggers and evidence workflow. See: ![Governance Roadmap](governance/governance-roadmap.md)
+
 #### Constraints & Trade-offs
 - Sparse monthly inference data; triangulation required
 - Latency vs. interpretability: kept method simple, documented assumptions

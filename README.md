@@ -3,6 +3,8 @@
 #### One-line value statement
 Measure and monitor market concentration of frontier AI compute with a reproducible HHI that blends hardware capacity (TFLOPs) and inference throughput (tokens) into a single, auditable metric.
 
+![Fórmulas Clave](artifacts/ai_frontier_hhi_chart.png)
+
 #### TL;DR
 In the global frontier AI compute market (>100B params), we calculated a rolling 4-quarter HHI using a composite share: 40% hardware (TFLOPs) + 60% inference (tokens). The HHI remains in high concentration for Q3 2024–Q2 2025, with triggers to audit access practices. Includes methodology, uncertainty bands, specs for BI, and trigger rules for governance.
 
@@ -33,7 +35,7 @@ In the global frontier AI compute market (>100B params), we calculated a rolling
 - Rationale: Composite share captures the “who can run models” reality (execution) and the physical substrate (chips).
 
 #### Key Formulas
-
+![Fórmulas Clave](artifacts/key_formulas.png)
 
 #### Key Insights
 1) HHI remains ~2,845–2,857 across Q3 2024–Q2 2025 → High concentration (≥2,500).

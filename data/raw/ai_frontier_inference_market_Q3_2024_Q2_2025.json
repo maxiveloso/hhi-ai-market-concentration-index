@@ -1,0 +1,375 @@
+{
+  "reportMetadata": {
+    "title": "AI Frontier Model Inference/API Market Analysis",
+    "reportDate": "2025-09-18",
+    "analysisPeriod": "Q3 2024 - Q2 2025",
+    "currency": "USD"
+  },
+  "marketSummary": {
+    "marketShare": [
+      {
+        "segment": "Enterprise LLM Usage",
+        "year": 2025,
+        "source": "WEB_SEARCH_2",
+        "shares": [
+          {
+            "provider": "Anthropic",
+            "sharePercentage": 32
+          },
+          {
+            "provider": "OpenAI",
+            "sharePercentage": null,
+            "notes": "Previously dominant, but overtaken by Anthropic in 2025. Exact share not specified."
+          }
+        ]
+      },
+      {
+        "segment": "Foundation Models & Model Management Platforms",
+        "year": 2024,
+        "source": "WEB_SEARCH_5",
+        "shares": [
+          {
+            "provider": "Microsoft (Azure)",
+            "sharePercentage": 39
+          },
+          {
+            "provider": "AWS (Bedrock)",
+            "sharePercentage": 19
+          },
+          {
+            "provider": "Google (Vertex AI)",
+            "sharePercentage": 15
+          }
+        ]
+      }
+    ],
+    "totalMarketSpend": [
+      {
+        "segment": "Enterprise LLM Spend",
+        "year": 2025,
+        "value": 8400000000,
+        "source": "WEB_SEARCH_2"
+      },
+      {
+        "segment": "Global AI Inference Market",
+        "year": 2024,
+        "value": 98320000000,
+        "source": "WEB_SEARCH_5"
+      }
+    ]
+  },
+  "providers": [
+    {
+      "providerName": "OpenAI",
+      "tokenVolume": {
+        "dailyTokens": 75000000000,
+        "period": "Early 2024",
+        "notes": "Estimate based on Sam Altman's statement of 100 billion words per day. Growth trend suggests higher volumes in late 2024 and 2025.",
+        "source": "WEB_SEARCH_1"
+      },
+      "apiUsageMetrics": {
+        "dailyApiInvocations": [
+          {
+            "year": 2024,
+            "value": 1300000000,
+            "source": "WEB_SEARCH_1"
+          },
+          {
+            "year": 2025,
+            "value": 2200000000,
+            "source": "WEB_SEARCH_1"
+          }
+        ]
+      },
+      "models": [
+        {
+          "modelName": "GPT-4.1",
+          "pricing": [
+            {
+              "type": "Fine-tuning",
+              "inputCostPerMillionTokens": 3.00,
+              "outputCostPerMillionTokens": 12.00,
+              "cachedInputCostPerMillionTokens": 0.75,
+              "source": "WEB_SEARCH_1_2"
+            }
+          ],
+          "rateLimits": [
+            {
+              "tier": "Tier 1 ($5+ spent)",
+              "tokensPerMinute": 10000,
+              "source": "WEB_SEARCH_1_2"
+            },
+            {
+              "tier": "Tier 5 ($1000+ spent)",
+              "tokensPerMinute": 300000,
+              "source": "WEB_SEARCH_1_2"
+            }
+          ]
+        },
+        {
+          "modelName": "GPT-4o",
+          "pricing": [],
+          "rateLimits": [
+            {
+              "tier": "Higher Tiers",
+              "tokensPerMinute": 12000000,
+              "source": "WEB_SEARCH_1_2"
+            }
+          ]
+        },
+        {
+          "modelName": "GPT-4o-mini",
+          "pricing": [],
+          "rateLimits": [
+            {
+              "tier": "Default",
+              "tokensPerMinute": 200000,
+              "source": "WEB_SEARCH_1_2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "providerName": "Anthropic",
+      "apiUsageMetrics": {
+        "notes": "77% of business API usage involves automation patterns. Usage is concentrated in high-income regions.",
+        "source": "WEB_SEARCH_2"
+      },
+      "models": [
+        {
+          "modelName": "Claude 4 / 4.1 Opus",
+          "pricing": [
+            {
+              "type": "On-Demand",
+              "inputCostPerMillionTokens": 15.00,
+              "outputCostPerMillionTokens": 75.00,
+              "source": "WEB_SEARCH_2_2"
+            }
+          ],
+          "rateLimits": [
+            {
+              "tier": "Tier 1",
+              "requestsPerMinute": 50,
+              "inputTokensPerMinute": 30000,
+              "outputTokensPerMinute": 8000,
+              "source": "WEB_SEARCH_2_2"
+            }
+          ]
+        },
+        {
+          "modelName": "Claude 4 Sonnet",
+          "pricing": [
+            {
+              "type": "On-Demand (<=200K context)",
+              "inputCostPerMillionTokens": 3.00,
+              "outputCostPerMillionTokens": 15.00,
+              "source": "WEB_SEARCH_2_2"
+            },
+            {
+              "type": "On-Demand (>200K context)",
+              "inputCostPerMillionTokens": 6.00,
+              "outputCostPerMillionTokens": 22.50,
+              "source": "WEB_SEARCH_2_2"
+            }
+          ],
+          "rateLimits": [
+            {
+              "tier": "Tier 1",
+              "requestsPerMinute": 50,
+              "inputTokensPerMinute": 30000,
+              "outputTokensPerMinute": 8000,
+              "source": "WEB_SEARCH_2_2"
+            }
+          ]
+        },
+        {
+          "modelName": "Claude 3.5 Haiku",
+          "pricing": [
+            {
+              "type": "On-Demand",
+              "inputCostPerMillionTokens": 0.80,
+              "outputCostPerMillionTokens": 4.00,
+              "source": "WEB_SEARCH_2_2"
+            }
+          ],
+          "rateLimits": []
+        }
+      ],
+      "notes": "Batch processing offers a 50% discount on pricing. Rate limits were increased in July 2025 for Sonnet 4 and Opus 4. New weekly limits were introduced for Claude Code in July 2025."
+    },
+    {
+      "providerName": "Google Cloud/Gemini",
+      "models": [
+        {
+          "modelName": "Gemini 2.5 Pro",
+          "pricing": [
+            {
+              "type": "Paid Tier (<200K context)",
+              "inputCostPerMillionTokens": 1.25,
+              "outputCostPerMillionTokens": 10.00,
+              "source": "WEB_SEARCH_3_2"
+            },
+            {
+              "type": "Paid Tier (>200K context)",
+              "inputCostPerMillionTokens": 2.50,
+              "outputCostPerMillionTokens": 15.00,
+              "source": "WEB_SEARCH_3_2"
+            }
+          ],
+          "rateLimits": [
+            {
+              "tier": "Free",
+              "requestsPerMinute": 5,
+              "tokensPerMinute": 125000,
+              "notes": "TPM limit corrected from earlier documentation.",
+              "source": "WEB_SEARCH_3"
+            },
+            {
+              "tier": "Tier 1 (Paid)",
+              "requestsPerMinute": 150,
+              "tokensPerMinute": 2000000,
+              "source": "WEB_SEARCH_3_2"
+            },
+            {
+              "tier": "Tier 2 ($250+ spent)",
+              "requestsPerMinute": null,
+              "tokensPerMinute": 5000000,
+              "source": "WEB_SEARCH_3"
+            },
+            {
+              "tier": "Tier 3 ($1000+ spent)",
+              "requestsPerMinute": 2000,
+              "tokensPerMinute": 8000000,
+              "source": "WEB_SEARCH_3_2"
+            }
+          ]
+        }
+      ],
+      "notes": "Rate limits for some models were increased in September 2024. Pricing for some models saw significant changes in late 2024."
+    },
+    {
+      "providerName": "Microsoft Azure/OpenAI",
+      "tokenVolume": {
+        "monthlyTokens": 50000000000000,
+        "period": "March 2025",
+        "notes": "Represents a fivefold increase from 2024.",
+        "source": "WEB_SEARCH_4"
+      },
+      "apiUsageMetrics": {
+        "notes": "Over 95% of Fortune 500 companies use Azure; 65% of these use Azure AI and Copilot services as of mid-2025.",
+        "source": "WEB_SEARCH_4"
+      },
+      "models": [
+        {
+          "modelName": "GPT-4.1 Series",
+          "pricing": [],
+          "rateLimits": [
+            {
+              "tier": "Default",
+              "requestsPerMinute": 1000,
+              "tokensPerMinute": 1000000,
+              "source": "WEB_SEARCH_4_2"
+            },
+            {
+              "tier": "Enterprise",
+              "requestsPerMinute": 150000,
+              "tokensPerMinute": 150000000,
+              "source": "WEB_SEARCH_1_2"
+            }
+          ]
+        },
+        {
+          "modelName": "GPT-5 Series (2025)",
+          "pricing": [
+            {
+              "type": "On-Demand (Global Deployment)",
+              "inputCostPerMillionTokens": 1.25,
+              "outputCostPerMillionTokens": null,
+              "source": "WEB_SEARCH_4_2"
+            }
+          ],
+          "rateLimits": [
+            {
+              "tier": "Default (Enterprise, Global)",
+              "requestsPerMinute": 10000,
+              "tokensPerMinute": 1000000,
+              "source": "WEB_SEARCH_4_2"
+            },
+            {
+              "tier": "Default (Enterprise, Data Zone)",
+              "requestsPerMinute": 3000,
+              "tokensPerMinute": 300000,
+              "source": "WEB_SEARCH_4_2"
+            }
+          ]
+        }
+      ],
+      "notes": "Offers pay-as-you-go, provisioned throughput, and batch APIs. Batch API provides a 50% discount. RPM to TPM ratio is typically 6 RPM per 1,000 TPM."
+    },
+    {
+      "providerName": "AWS Bedrock",
+      "models": [
+        {
+          "modelName": "Various (e.g., Anthropic Claude, Meta Llama)",
+          "pricing": [
+            {
+              "type": "On-Demand",
+              "notes": "Pay-per-use based on input/output tokens.",
+              "source": "WEB_SEARCH_5_2"
+            },
+            {
+              "type": "Batch Mode",
+              "notes": "Processes large volumes at a 50% discount to On-Demand.",
+              "source": "WEB_SEARCH_5_2"
+            },
+            {
+              "type": "Provisioned Throughput",
+              "notes": "Hourly charge for guaranteed throughput, with 1-month or 6-month commitments for discounts.",
+              "source": "WEB_SEARCH_5_2"
+            }
+          ],
+          "rateLimits": [
+            {
+              "tier": "On-Demand (Example: Claude 3 Haiku)",
+              "requestsPerMinute": 1000,
+              "tokensPerMinute": 2000000,
+              "source": "WEB_SEARCH_5_2"
+            }
+          ]
+        }
+      ],
+      "notes": "Charges will be metered daily and billed monthly starting February 1, 2025."
+    },
+    {
+      "providerName": "Meta",
+      "notes": "No data on a direct inference/API service was found in the provided research materials. Meta's models (e.g., Llama series) are available through third-party providers like AWS Bedrock."
+    }
+  ],
+  "sourceReliabilityAssessment": {
+    "confidenceLevelForHHI": "Medium",
+    "notes": "Market share data is available for specific segments (Enterprise LLM, Foundation Model Platforms) but not for the overall inference market, making a comprehensive HHI calculation challenging. Revenue is not consistently broken down by inference vs. other cloud services.",
+    "sources": [
+      {
+        "type": "Official Provider Documentation (Pricing/Rate Limit pages)",
+        "reliability": "High",
+        "description": "Provides precise, authoritative data on pricing structures and API limits. Considered the primary source for this information."
+      },
+      {
+        "type": "Company Blogs and Press Releases",
+        "reliability": "High",
+        "description": "Reliable for announcements of new features, models, and changes to pricing or rate limits."
+      },
+      {
+        "type": "Industry Analysis and News Reports (e.g., sqmagazine, iot-analytics, finance.yahoo)",
+        "reliability": "Medium",
+        "description": "Good for market share estimates, usage statistics, and revenue figures. Often based on surveys, proprietary analysis, or aggregation of public data. Should be cross-referenced when possible."
+      },
+      {
+        "type": "Community Forums and Social Media (e.g., Reddit, OpenAI Community)",
+        "reliability": "Low",
+        "description": "Useful for anecdotal evidence, user experiences, and identifying potential discrepancies in official documentation, but not reliable for quantitative market data."
+      }
+    ]
+  }
+}

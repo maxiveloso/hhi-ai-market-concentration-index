@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "name": "AI_Frontier_Compute_HHI",
+    "version": "1.0.0",
+    "owner": "Market_Analytics_Team",
+    "created_date": "2025-09-18T14:10:12.958802",
+    "tags": [
+      "market",
+      "HHI",
+      "AI",
+      "concentration"
+    ]
+  },
+  "dimensions": {
+    "tiempo": [
+      "Q3_2024",
+      "Q4_2024",
+      "Q1_2025",
+      "Q2_2025"
+    ],
+    "entidad": [
+      "NVIDIA_OpenAI_Ecosystem",
+      "Google_Integrated",
+      "Microsoft_Azure_OpenAI",
+      "Anthropic_AWS",
+      "AMD_Ecosystem",
+      "Intel_Standalone",
+      "Meta_Internal"
+    ],
+    "dimension_base": [
+      "HW",
+      "INF",
+      "FINAL"
+    ]
+  },
+  "metrics": {
+    "hardware_metrics": [
+      "unidades_hw",
+      "flops_prom_hw",
+      "tflops_hw"
+    ],
+    "inference_metrics": [
+      "tokens_mensuales",
+      "tokens_trimestrales"
+    ],
+    "market_share_metrics": [
+      "cuota_hw",
+      "cuota_inf",
+      "cuota_final"
+    ],
+    "concentration_metrics": [
+      "hhi",
+      "hhi_adj",
+      "hhi_min",
+      "hhi_mediana",
+      "hhi_max"
+    ]
+  },
+  "formulas": {
+    "hardware_share": "s_i^{HW} = (U_i \u00d7 FLOPs_i) / \u03a3(U_j \u00d7 FLOPs_j)",
+    "inference_share": "s_k^{INF} = Tokens_k / \u03a3(Tokens_l)",
+    "final_share": "s_e^{FINAL} = 0.4 \u00d7 s_e^{HW} + 0.6 \u00d7 s_e^{INF}",
+    "hhi": "HHI = \u03a3(s_e^{FINAL})\u00b2",
+    "hhi_adjustment": "HHI^{adj} = HHI + 200 \u00d7 \ud835\udfd9{\u2203e: s_e^{HW}>0.3 \u2227 s_e^{INF}>0.3}"
+  },
+  "sampling": {
+    "cadence": "quarterly",
+    "inference_detail": "monthly_aggregated_to_quarterly",
+    "window": "rolling_4Q"
+  },
+  "slas": {
+    "recency": "\u226415_days_after_quarter_close",
+    "completeness": "\u226595_percent",
+    "accuracy": "medium_confidence_level"
+  },
+  "lineage": {
+    "source_files": {
+      "hardware_data_hash": "159960f73a05800f7f5566e2b3a1952651db56c0258c799ea0fdaa9a865967ee",
+      "inference_data_hash": "1ec8833eb1296dc73e3315b3af3bb117a070dd47d1ed4a747b4ff51ab798a6f1",
+      "access_date": "2025-09-18T14:10:12.895140"
+    },
+    "processing_steps": [
+      "data_ingestion",
+      "market_share_calculation",
+      "entity_mapping",
+      "hhi_calculation",
+      "sensitivity_analysis"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "indicators": {
+    "hhi_adj_rolling_4Q": {
+      "description": "HHI adjusted for vertical integration, 4-quarter rolling window",
+      "formula": "HHI^{adj}(t) with rolling 4Q calculation",
+      "update_frequency": "quarterly"
+    }
+  },
+  "rules": {
+    "banda_concentracion": {
+      "healthy": "HHI < 1,500",
+      "moderate": "1,500 \u2264 HHI < 2,500",
+      "high": "2,500 \u2264 HHI < 5,000",
+      "extreme": "HHI \u2265 5,000"
+    },
+    "persistencia": {
+      "alta_conc_4Q": {
+        "condition": "HHI^{adj} > 2,500 sustained 4 quarters",
+        "action": "audit_access_practices",
+        "severity": "Warning"
+      },
+      "restr_2Q": {
+        "condition": "HHI^{adj} > 3,000 for 2 quarters",
+        "action": "prohibit_anti_benchmark_clauses",
+        "severity": "Warning"
+      },
+      "extrema": {
+        "condition": "HHI^{adj} > 4,000 any quarter",
+        "action": "mandatory_interoperability_civic_apis",
+        "severity": "Critical"
+      }
+    }
+  },
+  "actions": {
+    "audit_access_practices": {
+      "description": "Review market access and competitive practices",
+      "stakeholders": [
+        "competition_authority",
+        "market_participants"
+      ]
+    },
+    "prohibit_anti_benchmark_clauses": {
+      "description": "Ban anti-benchmarking clauses in public contracts",
+      "stakeholders": [
+        "procurement_offices",
+        "public_sector"
+      ]
+    },
+    "mandatory_interoperability_civic_apis": {
+      "description": "Require API interoperability for civic applications",
+      "stakeholders": [
+        "platform_providers",
+        "government_agencies"
+      ]
+    }
+  },
+  "monitoring": {
+    "evaluation_frequency": "quarterly",
+    "alert_channels": [
+      "email",
+      "dashboard",
+      "api_webhook"
+    ],
+    "escalation_matrix": {
+      "Info": "market_analysts",
+      "Warning": "policy_team",
+      "Critical": "executive_committee"
+    }
+  }
+}

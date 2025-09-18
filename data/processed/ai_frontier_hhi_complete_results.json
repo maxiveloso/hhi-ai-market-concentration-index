@@ -1,0 +1,421 @@
+{
+  "hardware_shares": {
+    "Q3 2024": {
+      "NVIDIA": 0.746268656716418,
+      "AMD": 0.08955223880597014,
+      "Intel": 0.014925373134328358,
+      "Google_TPU": 0.14925373134328357
+    },
+    "Q4 2024": {
+      "NVIDIA": 0.746268656716418,
+      "AMD": 0.08955223880597014,
+      "Intel": 0.014925373134328358,
+      "Google_TPU": 0.14925373134328357
+    },
+    "Q1 2025": {
+      "NVIDIA": 0.746268656716418,
+      "AMD": 0.08955223880597014,
+      "Intel": 0.014925373134328358,
+      "Google_TPU": 0.14925373134328357
+    },
+    "Q2 2025": {
+      "NVIDIA": 0.746268656716418,
+      "AMD": 0.08955223880597014,
+      "Intel": 0.014925373134328358,
+      "Google_TPU": 0.14925373134328357
+    }
+  },
+  "inference_shares": {
+    "Q3 2024": {
+      "OpenAI": 0.10296425585590871,
+      "Anthropic": 0.015444638378386307,
+      "Google_Gemini": 0.025741063963977177,
+      "Microsoft_Azure": 0.5720236436439373,
+      "AWS_Bedrock": 0.27867818536499506,
+      "Meta": 0.005148212792795435
+    },
+    "Q4 2024": {
+      "OpenAI": 0.07957890441084782,
+      "Anthropic": 0.017507358970386522,
+      "Google_Gemini": 0.022282093235037395,
+      "Microsoft_Azure": 0.5894733660062802,
+      "AWS_Bedrock": 0.2871793321569057,
+      "Meta": 0.003978945220542391
+    },
+    "Q1 2025": {
+      "OpenAI": 0.061131448482482906,
+      "Anthropic": 0.018339434544744872,
+      "Google_Gemini": 0.01956206351439453,
+      "Microsoft_Azure": 0.6037673924195842,
+      "AWS_Bedrock": 0.29414308861466926,
+      "Meta": 0.003056572424124145
+    },
+    "Q2 2025": {
+      "OpenAI": 0.057086263221963876,
+      "Anthropic": 0.021692780024346273,
+      "Google_Gemini": 0.019980192127687358,
+      "Microsoft_Azure": 0.6040874415022632,
+      "AWS_Bedrock": 0.2942990099626411,
+      "Meta": 0.002854313161098194
+    }
+  },
+  "entity_mappings": {
+    "NVIDIA_OpenAI_Ecosystem": {
+      "hardware": [
+        "NVIDIA"
+      ],
+      "inference": [
+        "OpenAI"
+      ],
+      "rationale": "NVIDIA GPUs power OpenAI infrastructure, strong partnership"
+    },
+    "Google_Integrated": {
+      "hardware": [
+        "Google_TPU"
+      ],
+      "inference": [
+        "Google_Gemini"
+      ],
+      "rationale": "Fully vertically integrated: Google TPUs power Gemini models"
+    },
+    "Microsoft_Azure_OpenAI": {
+      "hardware": [],
+      "inference": [
+        "Microsoft_Azure"
+      ],
+      "rationale": "Microsoft Azure OpenAI service, exclusive OpenAI partnership"
+    },
+    "Anthropic_AWS": {
+      "hardware": [],
+      "inference": [
+        "Anthropic",
+        "AWS_Bedrock"
+      ],
+      "rationale": "Anthropic partnership with AWS, Claude available on Bedrock"
+    },
+    "AMD_Ecosystem": {
+      "hardware": [
+        "AMD"
+      ],
+      "inference": [],
+      "rationale": "AMD MI300X chips, limited exclusive inference partnerships"
+    },
+    "Intel_Standalone": {
+      "hardware": [
+        "Intel"
+      ],
+      "inference": [],
+      "rationale": "Intel Gaudi chips, limited market adoption"
+    },
+    "Meta_Internal": {
+      "hardware": [],
+      "inference": [
+        "Meta"
+      ],
+      "rationale": "Primarily internal use, limited external API"
+    }
+  },
+  "integrated_shares": {
+    "Q3 2024": {
+      "NVIDIA_OpenAI_Ecosystem": 0.3602860162001124,
+      "Google_Integrated": 0.07514613091569974,
+      "Microsoft_Azure_OpenAI": 0.3432141861863624,
+      "Anthropic_AWS": 0.17647369424602882,
+      "AMD_Ecosystem": 0.03582089552238806,
+      "Intel_Standalone": 0.005970149253731343,
+      "Meta_Internal": 0.003088927675677261
+    },
+    "Q4 2024": {
+      "NVIDIA_OpenAI_Ecosystem": 0.3462548053330759,
+      "Google_Integrated": 0.07307074847833586,
+      "Microsoft_Azure_OpenAI": 0.3536840196037681,
+      "Anthropic_AWS": 0.18281201467637534,
+      "AMD_Ecosystem": 0.03582089552238806,
+      "Intel_Standalone": 0.005970149253731343,
+      "Meta_Internal": 0.0023873671323254345
+    },
+    "Q1 2025": {
+      "NVIDIA_OpenAI_Ecosystem": 0.33518633177605694,
+      "Google_Integrated": 0.07143873064595015,
+      "Microsoft_Azure_OpenAI": 0.3622604354517505,
+      "Anthropic_AWS": 0.18748951389564847,
+      "AMD_Ecosystem": 0.03582089552238806,
+      "Intel_Standalone": 0.005970149253731343,
+      "Meta_Internal": 0.001833943454474487
+    },
+    "Q2 2025": {
+      "NVIDIA_OpenAI_Ecosystem": 0.3327592206197455,
+      "Google_Integrated": 0.07168960781392585,
+      "Microsoft_Azure_OpenAI": 0.3624524649013579,
+      "Anthropic_AWS": 0.18959507399219241,
+      "AMD_Ecosystem": 0.03582089552238806,
+      "Intel_Standalone": 0.005970149253731343,
+      "Meta_Internal": 0.0017125878966589164
+    }
+  },
+  "hhi": {
+    "Q3 2024": {
+      "base_hhi": 2857.202175336783,
+      "vertical_integration_bonus": 0,
+      "adjusted_hhi": 2857.202175336783
+    },
+    "Q4 2024": {
+      "base_hhi": 2850.6882169250653,
+      "vertical_integration_bonus": 0,
+      "adjusted_hhi": 2850.6882169250653
+    },
+    "Q1 2025": {
+      "base_hhi": 2851.604527470439,
+      "vertical_integration_bonus": 0,
+      "adjusted_hhi": 2851.604527470439
+    },
+    "Q2 2025": {
+      "base_hhi": 2845.078923665914,
+      "vertical_integration_bonus": 0,
+      "adjusted_hhi": 2845.078923665914
+    }
+  },
+  "sensitivity_analysis": {
+    "Q3 2024": {
+      "scenario_-60": 1142.8808701347132,
+      "scenario_-40": 1714.3213052020699,
+      "scenario_-20": 2285.7617402694264,
+      "scenario_0": 2857.202175336783,
+      "scenario_20": 3028.63430585699,
+      "scenario_40": 3200.0664363771966,
+      "scenario_60": 3371.4985668974036,
+      "min": 1142.8808701347132,
+      "max": 3371.4985668974036,
+      "median": 2857.202175336783,
+      "confidence_level": "Medium"
+    },
+    "Q4 2024": {
+      "scenario_-60": 1140.2752867700262,
+      "scenario_-40": 1710.412930155039,
+      "scenario_-20": 2280.5505735400525,
+      "scenario_0": 2850.6882169250653,
+      "scenario_20": 3021.729509940569,
+      "scenario_40": 3192.7708029560727,
+      "scenario_60": 3363.812095971577,
+      "min": 1140.2752867700262,
+      "max": 3363.812095971577,
+      "median": 2850.6882169250653,
+      "confidence_level": "Medium"
+    },
+    "Q1 2025": {
+      "scenario_-60": 1140.6418109881756,
+      "scenario_-40": 1710.9627164822632,
+      "scenario_-20": 2281.2836219763512,
+      "scenario_0": 2851.604527470439,
+      "scenario_20": 3022.700799118665,
+      "scenario_40": 3193.797070766891,
+      "scenario_60": 3364.893342415118,
+      "min": 1140.6418109881756,
+      "max": 3364.893342415118,
+      "median": 2851.604527470439,
+      "confidence_level": "Medium"
+    },
+    "Q2 2025": {
+      "scenario_-60": 1138.0315694663657,
+      "scenario_-40": 1707.0473541995482,
+      "scenario_-20": 2276.0631389327314,
+      "scenario_0": 2845.078923665914,
+      "scenario_20": 3015.7836590858687,
+      "scenario_40": 3186.488394505823,
+      "scenario_60": 3357.193129925778,
+      "min": 1138.0315694663657,
+      "max": 3357.193129925778,
+      "median": 2845.078923665914,
+      "confidence_level": "Medium"
+    }
+  },
+  "triggers": {
+    "Q3 2024": {
+      "hhi": 2857.202175336783,
+      "concentration_band": "high",
+      "triggers": []
+    },
+    "Q4 2024": {
+      "hhi": 2850.6882169250653,
+      "concentration_band": "high",
+      "triggers": []
+    },
+    "Q1 2025": {
+      "hhi": 2851.604527470439,
+      "concentration_band": "high",
+      "triggers": []
+    },
+    "Q2 2025": {
+      "hhi": 2845.078923665914,
+      "concentration_band": "high",
+      "triggers": [
+        {
+          "type": "sustained_high_4Q",
+          "action": "audit_access_practices",
+          "severity": "Warning"
+        }
+      ]
+    }
+  },
+  "executive_report": "\n# AI Frontier Compute Market Concentration Analysis\n## Executive Report\n\n**Analysis Period:** Q3 2024 - Q2 2025 (Rolling 4Q Window)  \n**Report Date:** 2025-09-18  \n**Market Definition:** Global compute for training & inference of AI frontier models (>100B parameters)\n\n---\n\n### Executive Summary\n\nThe AI frontier compute market shows **high concentration levels** with HHI values consistently above 2,500 points across the analysis period, indicating significant market power concentration among a small number of vertically integrated entities.\n\n**Key Findings:**\n\n- **Q3 2024**: HHI = 2857 points (High concentration)\n- **Q4 2024**: HHI = 2851 points (High concentration)\n- **Q1 2025**: HHI = 2852 points (High concentration)\n- **Q2 2025**: HHI = 2845 points (High concentration)\n\n### Methodology\n\n**Market Definition**: AI frontier compute encompasses hardware accelerators (GPUs, TPUs, custom ASICs) and inference/API services for models exceeding 100B parameters.\n\n**Composite Market Share Formula**:\n- **Hardware Dimension (40% weight)**: s_i^{HW} = (Units_i \u00d7 TFLOPs_i) / \u03a3(Units_j \u00d7 TFLOPs_j)  \n- **Inference Dimension (60% weight)**: s_k^{INF} = Tokens_k / \u03a3(Tokens_l)\n- **Final Share**: s_e^{FINAL} = 0.4 \u00d7 s_e^{HW} + 0.6 \u00d7 s_e^{INF}\n- **HHI Calculation**: HHI = \u03a3(s_e^{FINAL})\u00b2 \u00d7 10,000\n- **Vertical Integration Adjustment**: +200 points if entity controls >30% in both dimensions\n\n**Entity Mappings**:\n\n- **NVIDIA_OpenAI_Ecosystem**: NVIDIA GPUs power OpenAI infrastructure, strong partnership\n- **Google_Integrated**: Fully vertically integrated: Google TPUs power Gemini models\n- **Microsoft_Azure_OpenAI**: Microsoft Azure OpenAI service, exclusive OpenAI partnership\n- **Anthropic_AWS**: Anthropic partnership with AWS, Claude available on Bedrock\n- **AMD_Ecosystem**: AMD MI300X chips, limited exclusive inference partnerships\n- **Intel_Standalone**: Intel Gaudi chips, limited market adoption\n- **Meta_Internal**: Primarily internal use, limited external API\n\n### Data Sources and Reliability\n\n**Primary Sources (High Reliability)**:\n- SEC filings (10-K, 10-Q) for NVIDIA, AMD, Intel revenue data\n- Company earnings reports and press releases  \n- Official API documentation for rate limits and pricing\n\n**Secondary Sources (Medium Reliability)**:  \n- Industry analysis reports and market research\n- Triangulation from revenue/pricing data for token estimates\n- Conservative estimates where direct data unavailable\n\n**Confidence Level**: Medium - Hardware data well-documented, inference estimates based on triangulation\n\n### Market Concentration Analysis\n\n\n**Q3 2024**: HHI 2857 - High Concentration\n\n**Q4 2024**: HHI 2851 - High Concentration\n\n**Q1 2025**: HHI 2852 - High Concentration\n\n**Q2 2025**: HHI 2845 - High Concentration\n  - Warning: audit_access_practices (sustained_high_4Q)\n\n\n### Risk Assessment and Recommendations\n\n**Market Risks**:\n- High concentration may limit innovation and increase switching costs\n- Vertical integration creates potential for anti-competitive behaviors  \n- Supply chain vulnerabilities in critical AI infrastructure\n\n**Recommended Actions**:\n- Monitor compliance with existing competition policy frameworks\n- Ensure interoperability standards for AI model deployment\n- Develop supply chain diversification strategies\n- Consider regulatory frameworks for AI infrastructure access\n\n### Uncertainty and Limitations\n\n**Sensitivity Analysis**: \u00b160% scenarios show HHI range variations of 2219 points\n\n**Key Limitations**:\n- Inference token volumes estimated via triangulation methods\n- Some proprietary capacity data not publicly disclosed  \n- Market boundaries may evolve with new model architectures\n- Geographic market dynamics not fully captured\n\n**Data Quality**: Mixed - Hardware shipments well-documented, API usage requires estimation\n\n---\n\n*This analysis implements a comprehensive methodology for measuring AI compute market concentration with appropriate uncertainty quantification and trigger-based monitoring for competition policy.*\n",
+  "data_product_spec": {
+    "metadata": {
+      "name": "AI_Frontier_Compute_HHI",
+      "version": "1.0.0",
+      "owner": "Market_Analytics_Team",
+      "created_date": "2025-09-18T14:10:12.958802",
+      "tags": [
+        "market",
+        "HHI",
+        "AI",
+        "concentration"
+      ]
+    },
+    "dimensions": {
+      "tiempo": [
+        "Q3_2024",
+        "Q4_2024",
+        "Q1_2025",
+        "Q2_2025"
+      ],
+      "entidad": [
+        "NVIDIA_OpenAI_Ecosystem",
+        "Google_Integrated",
+        "Microsoft_Azure_OpenAI",
+        "Anthropic_AWS",
+        "AMD_Ecosystem",
+        "Intel_Standalone",
+        "Meta_Internal"
+      ],
+      "dimension_base": [
+        "HW",
+        "INF",
+        "FINAL"
+      ]
+    },
+    "metrics": {
+      "hardware_metrics": [
+        "unidades_hw",
+        "flops_prom_hw",
+        "tflops_hw"
+      ],
+      "inference_metrics": [
+        "tokens_mensuales",
+        "tokens_trimestrales"
+      ],
+      "market_share_metrics": [
+        "cuota_hw",
+        "cuota_inf",
+        "cuota_final"
+      ],
+      "concentration_metrics": [
+        "hhi",
+        "hhi_adj",
+        "hhi_min",
+        "hhi_mediana",
+        "hhi_max"
+      ]
+    },
+    "formulas": {
+      "hardware_share": "s_i^{HW} = (U_i \u00d7 FLOPs_i) / \u03a3(U_j \u00d7 FLOPs_j)",
+      "inference_share": "s_k^{INF} = Tokens_k / \u03a3(Tokens_l)",
+      "final_share": "s_e^{FINAL} = 0.4 \u00d7 s_e^{HW} + 0.6 \u00d7 s_e^{INF}",
+      "hhi": "HHI = \u03a3(s_e^{FINAL})\u00b2",
+      "hhi_adjustment": "HHI^{adj} = HHI + 200 \u00d7 \ud835\udfd9{\u2203e: s_e^{HW}>0.3 \u2227 s_e^{INF}>0.3}"
+    },
+    "sampling": {
+      "cadence": "quarterly",
+      "inference_detail": "monthly_aggregated_to_quarterly",
+      "window": "rolling_4Q"
+    },
+    "slas": {
+      "recency": "\u226415_days_after_quarter_close",
+      "completeness": "\u226595_percent",
+      "accuracy": "medium_confidence_level"
+    },
+    "lineage": {
+      "source_files": {
+        "hardware_data_hash": "159960f73a05800f7f5566e2b3a1952651db56c0258c799ea0fdaa9a865967ee",
+        "inference_data_hash": "1ec8833eb1296dc73e3315b3af3bb117a070dd47d1ed4a747b4ff51ab798a6f1",
+        "access_date": "2025-09-18T14:10:12.895140"
+      },
+      "processing_steps": [
+        "data_ingestion",
+        "market_share_calculation",
+        "entity_mapping",
+        "hhi_calculation",
+        "sensitivity_analysis"
+      ]
+    }
+  },
+  "trigger_spec": {
+    "indicators": {
+      "hhi_adj_rolling_4Q": {
+        "description": "HHI adjusted for vertical integration, 4-quarter rolling window",
+        "formula": "HHI^{adj}(t) with rolling 4Q calculation",
+        "update_frequency": "quarterly"
+      }
+    },
+    "rules": {
+      "banda_concentracion": {
+        "healthy": "HHI < 1,500",
+        "moderate": "1,500 \u2264 HHI < 2,500",
+        "high": "2,500 \u2264 HHI < 5,000",
+        "extreme": "HHI \u2265 5,000"
+      },
+      "persistencia": {
+        "alta_conc_4Q": {
+          "condition": "HHI^{adj} > 2,500 sustained 4 quarters",
+          "action": "audit_access_practices",
+          "severity": "Warning"
+        },
+        "restr_2Q": {
+          "condition": "HHI^{adj} > 3,000 for 2 quarters",
+          "action": "prohibit_anti_benchmark_clauses",
+          "severity": "Warning"
+        },
+        "extrema": {
+          "condition": "HHI^{adj} > 4,000 any quarter",
+          "action": "mandatory_interoperability_civic_apis",
+          "severity": "Critical"
+        }
+      }
+    },
+    "actions": {
+      "audit_access_practices": {
+        "description": "Review market access and competitive practices",
+        "stakeholders": [
+          "competition_authority",
+          "market_participants"
+        ]
+      },
+      "prohibit_anti_benchmark_clauses": {
+        "description": "Ban anti-benchmarking clauses in public contracts",
+        "stakeholders": [
+          "procurement_offices",
+          "public_sector"
+        ]
+      },
+      "mandatory_interoperability_civic_apis": {
+        "description": "Require API interoperability for civic applications",
+        "stakeholders": [
+          "platform_providers",
+          "government_agencies"
+        ]
+      }
+    },
+    "monitoring": {
+      "evaluation_frequency": "quarterly",
+      "alert_channels": [
+        "email",
+        "dashboard",
+        "api_webhook"
+      ],
+      "escalation_matrix": {
+        "Info": "market_analysts",
+        "Warning": "policy_team",
+        "Critical": "executive_committee"
+      }
+    }
+  }
+}
